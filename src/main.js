@@ -9,8 +9,22 @@ export default class App {
 
       return final;
     }
+
+    convertirAString(numero){
+        let i = 0;
+        let asteriscos = "";
+
+        while(i < numero){
+            asteriscos = asteriscos + "*";
+            i = i + 1;
+        }
+
+      return asteriscos;
+    }
 }
 
 let app = new App();
 
 console.log(app.factorial(6));
+
+console.log(app.convertirAString(6));
