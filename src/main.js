@@ -23,16 +23,17 @@ export default class App {
     }
 
     obtenerDivisibles(numero){
-        let i = 1;
+        let i = numero;
         let divisible = 0;
+        let n = numero;
 
         do {
-            if(numero % i == 0){
+            if(n % i == 0){
                 divisible = divisible + 1;
             }
 
-            i = i + 1;  
-        } while (i <= numero)
+            i = i - 1;
+        } while (i >= 0);
 
       return divisible;
     }
